@@ -1,0 +1,36 @@
+.calc {
+    margin-top: 5%;
+    margin-left: 25%;
+
+    .key {
+        text-align: center;
+        font-size: 18px;
+        border: solid 1px;
+        padding: 50px;
+    }
+
+    .key:hover{
+        background: #f1f1f1;
+        border: solid 3px;
+    }
+
+    .calc-area{
+        text-align: right;
+        background-color: #E3F6CE;
+        font-size: 20pt;
+        border-left: solid 1px;
+        border-right: solid 1px;
+        border-top: 1px solid;
+        height: 45px;
+    }
+
+    .operation{
+        height: 20px;
+        border-left: solid 1px;
+        border-right: solid 1px;
+        border-bottom: solid 1px;
+        border-top: solid 1px;
+        padding: 20px;
+        text-align: right;
+    }
+}

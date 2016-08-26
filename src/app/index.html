@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="AppCalculator">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora</title>
+	</head>
+	<body ng-controller="ControllerCalculator">
+		<div class="calc">
+			<div class="columns">
+				<div class="column is-10 calc-area">
+					{{!calculator.operator? calculator.firstNumber : calculator.lastNumber}}
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column is-10 operation">
+					{{calculator.firstNumber}} {{calculator.operator}}
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column is-2 key" ng-click="setNumber('7')">
+					7
+				</div>
+				<div class="column is-2 key" ng-click="setNumber('8')">
+					8
+				</div>
+				<div class="column is-2 key" ng-click="setNumber('9')">
+					9
+				</div>
+				<div class="column is-2 key" ng-click="setOperator('/')">
+					/
+				</div>
+				<div class="column is-2 key key" ng-click="clear();">
+					Clear
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column is-2 key" ng-click="setNumber('4')">
+ 					4
+				</div>
+				<div class="column is-2 key" ng-click="setNumber('5')">
+					5
+				</div>
+				<div class="column is-2 key" ng-click="setNumber('6')">
+					6
+				</div>
+				<div class="column is-2 key"  ng-click="setOperator('*')">
+					*
+				</div>
+				<div class="column is-2 key"  ng-click="setResult()">
+					=
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column is-2 key" ng-click="setNumber('1')">
+					1
+				</div>
+				<div class="column is-2 key" ng-click="setNumber('2')">
+					2
+				</div>
+				<div class="column is-2 key" ng-click="setNumber('3')">
+					3
+				</div>
+				<div class="column is-4 key"  ng-click="setOperator('-')">
+					-
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column is-2 key" ng-click="setNumber('0')">
+					0
+				</div>
+				<div class="column is-2 key" ng-click="setComma()">
+					,
+				</div>
+				<div class="column is-6 key" ng-click="setOperator('+')">
+					+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
