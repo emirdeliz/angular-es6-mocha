@@ -11,7 +11,7 @@
         "mocha": "mocha --compilers js:babel-register src/**/*.test.js",
         "watch": "mocha --compilers js:babel-register -w src/**/*.test.js",
         "karma": "karma start",
-        "test": "npm run lint && npm run mocha && karma start --single-run"
+        "test": "npm run lint && npm run mocha"
     },
     "repository": {
         "type": "git",
@@ -39,12 +39,6 @@
         "extract-text-webpack-plugin": "^1.0.1",
         "html-webpack-plugin": "^2.15.0",
         "jasmine-core": "^2.4.1",
-        "karma": "^0.13.22",
-        "karma-chrome-launcher": "^1.0.1",
-        "karma-jasmine": "^1.0.2",
-        "karma-mocha": "^1.0.1",
-        "karma-mocha-reporter": "^2.0.3",
-        "karma-webpack": "^1.7.0",
         "mocha": "^2.4.5",
         "node-sass": "^3.4.2",
         "open-browser-webpack-plugin": "0.0.2",
